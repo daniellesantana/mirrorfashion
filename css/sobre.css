@@ -1,4 +1,4 @@
-body {
+body {	
   color: #333333;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   margin-left: auto;
@@ -82,15 +82,16 @@ footer {
 footer .container {
   position: relative;
 }
+
 .social {
-  position: absolute;
-  top: 0px;
-  right: 0;
+  position: relative;
+  float: right;
 }
 
 .social li {
   float: left;
   margin-left: 25px;
 }
+
 
 /* fim rodapé */
