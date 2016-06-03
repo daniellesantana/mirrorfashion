@@ -3,7 +3,12 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-/* cabeçalho */
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* começo do menu opções */
 
 .menu-opcoes ul li {
   display: inline;
@@ -16,12 +21,22 @@ body {
   right: 0;
 }
 
+.menu-opcoes a:hover {
+  color: #007dc6;
+}
+
+.menu-opcoes a:active {
+  color: #867dc6;
+}
+
 .menu-opcoes ul {
   font-size: 15px;
 }
 .menu-opcoes a {
   color: #003366;
 }
+
+/* fim menu opções */
 
 .sacola {
   padding-top: 8px;
@@ -35,15 +50,11 @@ body {
   width: 140px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 940px;
-}
 
 header {
   position: relative;
 }
-/* fim do cabeçalho */
+
 
 /* começo menu de busca */
 .busca,
@@ -88,6 +99,24 @@ header {
   padding-bottom: 10px;
 }
 
+.menu-departamentos li ul {
+  display: none;
+}
+
+.menu-departamentos li:hover ul {
+  display: block;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before {
+  content: '- ';
+  padding-right: 3px;
+}
+
+
 destaque {
   margin-top: 10px;
 }
@@ -96,6 +125,12 @@ destaque {
 /* fim menu de busca */
 
 /* começo paineis novidades e mais vendidos */
+
+.painel h2:before {
+content: '\2756';
+padding-right: 5px;
+opacity: 0.4;
+}
 
 .painel {
   margin: 10px 0;

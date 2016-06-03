@@ -10,6 +10,21 @@ body {
   margin: 0 auto;
 }
 
+/* começo parágrafos e h1 */
+
+:not(p) + p:first-line {
+font-variant: small-caps;
+}
+
+h1 + p {
+text-indent: 0;
+}
+
+p:first-line {
+font-variant: small-caps;
+}
+
+
 h1 {
   background-image: url(../img/sobre-background.jpg);
   padding: 10px;
@@ -24,6 +39,8 @@ p{
   padding: 0 45px;
   text-indent: 15px;
 }
+
+/* fim parágrafos e h1... */
 
 figure {
   background-color: #F2EDED;
